@@ -270,6 +270,7 @@ typedef MG_ENUM(i8, mg_button) {
     MG_BUTTON_WEST,            /**< Left face button (e.g. Xbox X button) */
     MG_BUTTON_NORTH,           /**< Top face button (e.g. Xbox Y button) */
     MG_BUTTON_BACK,				/**< back (or select) button on the gamepad */
+    MG_BUTTON_SELECT = MG_BUTTON_BACK,
     MG_BUTTON_GUIDE,			/**< guide button on the controller (e.g. the Xbox button or ps button) */
     MG_BUTTON_START,			/**< start button on the gamepad */
     MG_BUTTON_LEFT_STICK,		/**< left stick button (L3) */
@@ -1328,7 +1329,7 @@ mg_button mg_get_gamepad_button_platform(u32 button) {
             return MG_BUTTON_NORTH;
         case BTN_EAST:
             return MG_BUTTON_EAST;
-        case BTN_BACK:
+        case BTN_SELECT:
             return MG_BUTTON_BACK;
         case BTN_MODE:
             return MG_BUTTON_GUIDE;
