@@ -1361,9 +1361,6 @@ mg_button mg_get_gamepad_button_platform(u32 button) {
             return MG_BUTTON_LEFT_PADDLE1;
         case BTN_TRIGGER_HAPPY8:
             return MG_BUTTON_LEFT_PADDLE2;
-
-        case BTN_SELECT:
-            return MG_BUTTON_MISC1;
         case BTN_TRIGGER_HAPPY2:
             return MG_BUTTON_MISC2;
         case BTN_TRIGGER_HAPPY3:
