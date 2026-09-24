@@ -1,0 +1,6 @@
+.vscode
+examples/callbacks
+examples/events
+examples/gamepadquery
+examples/list
+examples/rgfw_gamepad
