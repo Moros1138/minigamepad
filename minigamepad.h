@@ -1321,12 +1321,12 @@ mg_bool mg_gamepad_update_platform(mg_gamepad* gamepad, mg_events* events) {
 
 mg_button mg_get_gamepad_button_platform(u32 button) {
     switch (button) {
-        case BTN_WEST: /* known bug in evdev, physical north maps to west and vice versa */
-            return MG_BUTTON_NORTH;
+        case BTN_WEST:
+            return MG_BUTTON_WEST;
         case BTN_A:
             return MG_BUTTON_SOUTH;
-        case BTN_NORTH: /* known bug in evdev, physical west maps to north and vice versa */
-            return MG_BUTTON_WEST; 
+        case BTN_NORTH:
+            return MG_BUTTON_NORTH;
         case BTN_EAST:
             return MG_BUTTON_EAST;
         case BTN_SELECT:
