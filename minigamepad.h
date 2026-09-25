@@ -1322,11 +1322,11 @@ mg_bool mg_gamepad_update_platform(mg_gamepad* gamepad, mg_events* events) {
 mg_button mg_get_gamepad_button_platform(u32 button) {
     switch (button) {
         case BTN_WEST:
-            return MG_BUTTON_WEST;
+            return MG_BUTTON_NORTH;
         case BTN_A:
             return MG_BUTTON_SOUTH;
         case BTN_NORTH:
-            return MG_BUTTON_NORTH;
+            return MG_BUTTON_WEST;
         case BTN_EAST:
             return MG_BUTTON_EAST;
         case BTN_SELECT:
